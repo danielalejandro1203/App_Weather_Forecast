@@ -39,7 +39,6 @@ if place:
             sky_conditions = [d["weather"][0]["main"] for d in filtered_data]
             dates = [d["dt_txt"] for d in filtered_data]
             image_paths = [images[c] for c in sky_conditions]
-
             cols = st.columns(4)
 
             for i in range(len(image_paths)):
